@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useMemo, useLayoutEffect } from 'react';
-import { View, Text, StyleSheet, FlatList, TextInput, TouchableOpacity, ActivityIndicator, ScrollView } from 'react-native';
+import React, { useEffect, useState, useMemo, useLayoutEffect, useCallback } from 'react';
+import { View, Text, StyleSheet, FlatList, TextInput, TouchableOpacity, ActivityIndicator, ScrollView, RefreshControl } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { CORES, ESPACO, RAIO, SOMBRA, LARGURA_MAXIMA } from '../theme/cores';
 import { buscarProdutos } from '../services/api';
@@ -10,6 +10,7 @@ import { useGrade } from '../hooks/useGrade';
 export default function CatalogoScreen({ navigation }) {
   const [produtos, setProdutos] = useState([]);
   const [carregando, setCarregando] = useState(true);
+  const [atualizando, setAtualizando] = useState(false);
   const [busca, setBusca] = useState('');
   const [categoria, setCategoria] = useState('Todos');
   const { quantidadeTotal } = useCarrinho();
@@ -27,13 +28,20 @@ export default function CatalogoScreen({ navigation }) {
     });
   }, [navigation, quantidadeTotal]);
 
-  useEffect(() => {
-    (async () => {
-      const { dados } = await buscarProdutos();
-      setProdutos(dados);
-      setCarregando(false);
-    })();
+  const carregar = useCallback(async () => {
+    const { dados } = await buscarProdutos();
+    setProdutos(dados);
   }, []);
+
+  useEffect(() => {
+    (async () => { await carregar(); setCarregando(false); })();
+  }, [carregar]);
+
+  const aoAtualizar = useCallback(async () => {
+    setAtualizando(true);
+    await carregar();
+    setAtualizando(false);
+  }, [carregar]);
 
   const categorias = useMemo(() => ['Todos', ...Array.from(new Set(produtos.map(p => p.cat)))], [produtos]);
   const destaques = useMemo(() => produtos.filter(p => p.destaque), [produtos]);
@@ -52,6 +60,7 @@ export default function CatalogoScreen({ navigation }) {
       <FlatList
         key={'cols-' + colunas}
         data={filtrados}
+        refreshControl={<RefreshControl refreshing={atualizando} onRefresh={aoAtualizar} colors={[CORES.azul]} tintColor={CORES.azul} />}
         keyExtractor={p => String(p.id)}
         numColumns={colunas}
         columnWrapperStyle={s.linha}

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { PRODUTOS } from '../data/produtos';
 
-export const URL_API = '';
+export const URL_API = 'https://raw.githubusercontent.com/wmarquesbdev/jp-imports/main/products.json';
 
 export async function buscarProdutos() {
   if (URL_API) {
