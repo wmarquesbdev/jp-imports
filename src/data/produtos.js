@@ -1,0 +1,271 @@
+export const PRODUTOS = [
+  {
+    "id": 1,
+    "cat": "Caixas Térmicas",
+    "nome": "Kit 3 Caixas Térmicas Cooler 7,5L, 15L e 30L",
+    "preco": 196.99,
+    "marca": "Unitermi",
+    "destaque": true,
+    "desc": "Kit com 3 caixas térmicas nos tamanhos 7,5L, 15L e 30L, ideais para manter alimentos e bebidas gelados em viagens e atividades ao ar livre. A de 7,5L comporta 12 latas, a de 15L até 22 latas e a de 30L até 45 latas. Acompanha alça para facilitar o transporte.",
+    "variacoes": [
+      {
+        "tipo": "Cor",
+        "opcoes": [
+          "Azul",
+          "Verde",
+          "Cinza",
+          "Vermelho",
+          "Preto"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "cat": "Caixas Térmicas",
+    "nome": "Caixa Térmica Cooler 15L com Tampa Bandeja",
+    "preco": 70.88,
+    "marca": "Unitermi",
+    "destaque": false,
+    "desc": "Caixa térmica de 15 litros que acomoda até 22 latas, ideal para manter bebidas geladas em churrascos, festas e acampamentos. Possui tampa que vira bandeja com porta-copos, alça reforçada e isolamento em EPS com Sistema Air Flow.",
+    "variacoes": [
+      {
+        "tipo": "Cor",
+        "opcoes": [
+          "Azul",
+          "Vermelho",
+          "Cinza"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "cat": "Garrafas Térmicas",
+    "nome": "Garrafa Térmica 1 Litro com Ampola de Vidro",
+    "preco": 149.29,
+    "marca": "Termopro",
+    "destaque": false,
+    "desc": "Garrafa térmica de 1 litro com ampola de vidro para melhor isolamento, mantendo bebidas quentes ou frias na temperatura ideal por mais tempo. Design elegante para o dia a dia, escritório e recepções.",
+    "variacoes": [
+      {
+        "tipo": "Cor",
+        "opcoes": [
+          "Branca",
+          "Bege",
+          "Cinza",
+          "Preta",
+          "Vidro com detalhes dourados"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "cat": "Garrafas Térmicas",
+    "nome": "Garrafa Térmica Inox 3 Litros Air Pot",
+    "preco": 113.89,
+    "marca": "Stanlux",
+    "destaque": false,
+    "desc": "Garrafa térmica em inox com capacidade para 3 litros, ideal para manter o tereré bem gelado ou o chá e o café quentinhos. Resistente e livre de BPA, com sistema de bomba (air pot) para servir com praticidade.",
+    "variacoes": []
+  },
+  {
+    "id": 5,
+    "cat": "Garrafas Térmicas",
+    "nome": "Garrafa Térmica Inox 1100ml Parede Dupla",
+    "preco": 96.9,
+    "marca": "Stanley",
+    "destaque": true,
+    "desc": "Garrafa térmica de aço inox com capacidade para 1100ml e isolamento a vácuo de paredes duplas, que mantém líquidos quentes ou frios por longos períodos. As superfícies internas espelhadas ajudam a preservar a temperatura.",
+    "variacoes": [
+      {
+        "tipo": "Cor",
+        "opcoes": [
+          "Verde",
+          "Branca",
+          "Rosa"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "cat": "Casa & Cozinha",
+    "nome": "Chaleira Elétrica Inox 2L com Seletor de Temperatura",
+    "preco": 71.88,
+    "marca": "JP Imports",
+    "destaque": false,
+    "desc": "Chaleira elétrica em aço inoxidável com capacidade de 2 litros e seletor de temperatura, ideal para preparar café, chás e chimarrão. Possui desligamento automático, base giratória de 360 graus e aquecimento rápido.",
+    "variacoes": []
+  },
+  {
+    "id": 7,
+    "cat": "Eletrônicos",
+    "nome": "Video Game Retrô Game Stick Lite 64GB com 2 Controles",
+    "preco": 172.69,
+    "marca": "JP Imports",
+    "destaque": true,
+    "desc": "Console de videogame retrô que conecta na TV via HDMI e emula consoles clássicos com milhares de jogos pré-instalados. Acompanha dois controles sem fio 2.4G, extensor HDMI, cabo USB e cartão de 64GB, suportando até 2 jogadores ao mesmo tempo.",
+    "variacoes": []
+  },
+  {
+    "id": 8,
+    "cat": "Garrafas Térmicas",
+    "nome": "Garrafa Térmica Inox Revestida em Couro",
+    "preco": 170.1,
+    "precoAte": 260.91,
+    "marca": "JP Imports",
+    "destaque": true,
+    "desc": "Garrafa térmica em aço inox revestida em couro, com isolamento térmico eficiente que mantém bebidas quentes ou frias por mais tempo. Possui base giratória 360 graus, alça e tampa em plástico rígido. Disponível de 2,5L a 5,0L.",
+    "variacoes": [
+      {
+        "tipo": "Capacidade",
+        "opcoes": [
+          "2,5L",
+          "3,0L",
+          "4,0L",
+          "5,0L"
+        ],
+        "precos": {
+          "2,5L": 170.1,
+          "3,0L": 201.49,
+          "4,0L": 235.82,
+          "5,0L": 260.91
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "cat": "Tereré & Chimarrão",
+    "nome": "Garrafa de Couro Personalizada 2,5L - Times de Futebol",
+    "preco": 179.79,
+    "marca": "JP Imports",
+    "destaque": true,
+    "desc": "Garrafa revestida em couro com a estampa do seu time de futebol, acompanha copo e bomba. Material resistente e durável, ideal para o dia a dia, viagens e churrascos. Observação: produto não térmico.",
+    "variacoes": [
+      {
+        "tipo": "Time",
+        "opcoes": [
+          "Flamengo",
+          "São Paulo",
+          "Vasco",
+          "Corinthians",
+          "Palmeiras",
+          "Brasil"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "cat": "Tereré & Chimarrão",
+    "nome": "Porta-Erva de Tereré e Chimarrão em Couro",
+    "preco": 35.88,
+    "precoAte": 127.99,
+    "marca": "Lustar Plus",
+    "destaque": false,
+    "desc": "Porta-erva para tereré ou chimarrão em couro legítimo, com recipiente interno em metal e alça para transporte. Escolha apenas a erva, somente o porta-erva ou o kit completo já com a erva em sabores variados.",
+    "variacoes": [
+      {
+        "tipo": "Tipo",
+        "opcoes": [
+          "Só erva",
+          "Porta-erva",
+          "Porta-erva + erva (sabores)"
+        ],
+        "precos": {
+          "Só erva": 35.88,
+          "Porta-erva": 101.54,
+          "Porta-erva + erva (sabores)": 127.99
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "cat": "Tereré & Chimarrão",
+    "nome": "Kit Cuia e Bomba para Chimarrão Inox",
+    "preco": 40.99,
+    "marca": "Termolar",
+    "destaque": false,
+    "desc": "Kit completo para chimarrão em aço inoxidável, acompanhando a cuia e a bomba. Disponível em várias cores, ideal para tomar aquele tereré ou chimarrão gelado.",
+    "variacoes": [
+      {
+        "tipo": "Cor",
+        "opcoes": [
+          "Amarelo",
+          "Vermelho",
+          "Azul",
+          "Roxo",
+          "Prata"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "cat": "Camping & Lazer",
+    "nome": "Barraca de Camping Camuflada com Mosquiteiro",
+    "preco": 94.05,
+    "precoAte": 132.91,
+    "marca": "JP Imports",
+    "destaque": false,
+    "desc": "Barraca de camping camuflada em poliéster resistente, ideal para acampamentos em família ou com amigos. Possui mosquiteiro na porta, boa ventilação e acompanha sacola para transporte. Disponível para 3, 4, 5 ou 6 pessoas.",
+    "variacoes": [
+      {
+        "tipo": "Tamanho",
+        "opcoes": [
+          "3 pessoas",
+          "4 pessoas",
+          "5 pessoas",
+          "6 pessoas"
+        ],
+        "precos": {
+          "3 pessoas": 94.05,
+          "4 pessoas": 113.91,
+          "5 pessoas": 123.41,
+          "6 pessoas": 132.91
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "cat": "Brinquedos",
+    "nome": "Chaveiro 3D Capivara",
+    "preco": 12.0,
+    "precoAte": 56.0,
+    "marca": "JP Imports",
+    "destaque": false,
+    "desc": "Chaveiro de capivara em 3D, modelo fofo e resistente, ideal para pendurar em mochilas, bolsas e chaves. Disponível em unidade ou em kits com mais peças.",
+    "variacoes": [
+      {
+        "tipo": "Modelo",
+        "opcoes": [
+          "Capivara (unidade)",
+          "Kit casal",
+          "Kit 3",
+          "Kit 4"
+        ],
+        "precos": {
+          "Capivara (unidade)": 12.0,
+          "Kit casal": 24.0,
+          "Kit 3": 40.0,
+          "Kit 4": 56.0
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "cat": "Brinquedos",
+    "nome": "Capivara Robô Dançante com Luzes e Música",
+    "preco": 81.59,
+    "marca": "JP Imports",
+    "destaque": true,
+    "desc": "Brinquedo capivara robô que mexe os braços, gira e dança ao som de músicas animadas, com luzes coloridas nas orelhas e nas mãos. Estimula a coordenação e a percepção sonora das crianças. Funciona com pilhas (não inclusas), indicado para maiores de 3 anos.",
+    "variacoes": []
+  }
+];

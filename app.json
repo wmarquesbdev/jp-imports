@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "JP Imports",
+    "slug": "app-jp-imports",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "primaryColor": "#1683CE",
+    "icon": "./assets/icon.png",
+    "scheme": "jpimports",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B3D80"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.jpimports.app",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.jpimports.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0B3D80"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f99aa3cf-6774-4e23-badb-d422896be73e"
+      }
+    },
+    "plugins": [
+      "expo-font"
+    ]
+  }
+}
