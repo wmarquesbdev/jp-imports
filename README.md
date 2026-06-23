@@ -6,12 +6,25 @@
   App mobile de catálogo e-commerce da loja de variedades **JP Imports 2025** (Campo Grande - MS):
   garrafas e caixas térmicas, itens de tereré e chimarrão, camping, eletrônicos, brinquedos e mais.
 
-  **🔗 Acesse o app (demo ao vivo): [jpimportsms.netlify.app](https://jpimportsms.netlify.app)**
+  **🔗 App online (Android e iPhone): [jpimportsms.netlify.app](https://jpimportsms.netlify.app)**
+
+  **📲 APK para Android: [baixar e instalar pelo Expo](https://expo.dev/accounts/denzsync/projects/app-jp-imports/builds/05cfb023-7666-4c01-a25c-22e8e3b51496)**
 
   `React Native` · `Expo` · `Android e Web`
 </div>
 
 ---
+
+## 📲 Baixar o app no Android (APK)
+
+Além da versão web, há um **APK** instalável, gerado com **EAS Build** (Expo):
+
+1. No celular Android, abra o link:
+   <https://expo.dev/accounts/denzsync/projects/app-jp-imports/builds/05cfb023-7666-4c01-a25c-22e8e3b51496>
+2. Toque em **Install** para baixar o arquivo `.apk`.
+3. Abra o `.apk` e permita **instalar de fontes desconhecidas** → **Instalar**.
+
+> O iPhone não instala APK — no iOS, use o link da web acima.
 
 ## Como funciona (resumo)
 
