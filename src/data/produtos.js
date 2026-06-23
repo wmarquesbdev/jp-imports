@@ -35,7 +35,8 @@ export const PRODUTOS = [
           "Azul",
           "Vermelho",
           "Cinza"
-        ]
+        ],
+        "imagens": { "Azul": 0, "Vermelho": 2 }
       }
     ]
   },
@@ -85,7 +86,8 @@ export const PRODUTOS = [
           "Verde",
           "Branca",
           "Rosa"
-        ]
+        ],
+        "imagens": { "Branca": 0, "Rosa": 1, "Verde": 2 }
       }
     ]
   },
@@ -154,7 +156,8 @@ export const PRODUTOS = [
           "Corinthians",
           "Palmeiras",
           "Brasil"
-        ]
+        ],
+        "imagens": { "Flamengo": 2, "São Paulo": 5, "Brasil": 4, "Palmeiras": 1 }
       }
     ]
   },
@@ -200,7 +203,8 @@ export const PRODUTOS = [
           "Azul",
           "Roxo",
           "Prata"
-        ]
+        ],
+        "imagens": { "Amarelo": 1, "Vermelho": 4, "Azul": 5, "Roxo": 0, "Prata": 2 }
       }
     ]
   },
